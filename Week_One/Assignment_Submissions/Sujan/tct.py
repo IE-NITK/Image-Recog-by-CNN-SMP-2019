@@ -21,7 +21,15 @@ show()
 st=0
 ast=0
 while(True):
-    inp=int(input("which tile do you want to put your x in?"))
+    inp=0
+    while(True):
+      inp=int(input("which tile do you want to put your x in?"))
+      if inp not   in store:
+        break
+      else:
+        print("Already filled")
+        
+    
     for i in range(3):
         for j in range(3):
             if b[i][j]==inp:
