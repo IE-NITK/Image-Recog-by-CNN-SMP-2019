@@ -1,0 +1,58 @@
+import random
+import os
+
+b=[" "," "," "," "," "," "," "," "," "]
+
+
+def board():
+  print (" TIC-TAC-TOE ")
+  print("1|2|3")
+  print("4|5|6")
+  print ("7|8|9")
+  print("    ")
+  print("   |   |   ")
+  print(" "+b[0]+" | "+b[1]+" | "+b[2])
+  print("_ _|_ _|_ _")
+  print("   |   |   ")
+  print(" "+b[3]+" | "+b[4]+" | "+b[5])
+  print("_ _|_ _|_ _")
+  print("   |   |   ")
+  print(" "+b[6]+" | "+b[7]+" | "+b[8])
+  print("   |   |   ")
+
+def compturn():
+  turn = list(range(0,9))
+  x=random.choice(turn)
+  if b[x]==" " :
+    b[x]="O"
+  else:
+    compturn()
+  
+
+while True:
+  os.system("cls")
+  board()
+  if (b[0]=="O" and b[1]=="O" and b[2]=="O") or  (b[3]=="O" and b[4]=="O" and b[5]=="O") or  (b[6]=="O" and b[7]=="O" and b[8]=="O") or (b[0]=="O" and b[3]=="O" and b[6]=="O") or  (b[1]=="O" and b[4]=="O" and b[7]=="O") or (b[2]=="O" and b[5]=="O" and b[8]=="O") or (b[0]=="O" and b[4]=="O" and b[8]=="O") or (b[2]=="O" and b[4]=="O" and b[6]=="O"):
+    print("COMPUTER WINS")
+    break;
+  choice=input("enter the place where you want to place an X")
+  choice=int(choice)
+  if b[choice-1]==" " :
+    b[choice-1]="X"
+    if (b[0]=="X" and b[1]=="X" and b[2]=="X") or (b[3]=="X" and b[4]=="X" and b[5]=="X") or (b[6]=="X" and b[7]=="X" and b[8]=="X") or (b[0]=="X" and b[3]=="X" and b[6]=="X") or (b[1]=="X" and b[4]=="X" and b[7]=="X") or  (b[2]=="X" and b[5]=="X" and b[8]=="X") or (b[0]=="X" and b[4]=="X" and b[8]=="X") or  (b[2]=="X" and b[4]=="X" and b[6]=="X"):
+      board()
+      print("YOU WIN")
+      break;
+    count=0
+    for j in range(0,9):
+      if(b[j]==" "):
+        count=count+1
+    if(count==0):
+        print("TIED")
+        board()
+        break;
+    compturn()
+  else:
+    print("Sorry that place is used")
+    
+  

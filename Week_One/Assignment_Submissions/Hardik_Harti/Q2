@@ -1,0 +1,12 @@
+import numpy as np
+m= input("enter the number of rows")
+m=int(m)
+n=input("enter the number of columns")
+n=int(n)
+a=np.empty((m,n),dtype=np.int64)
+x=m*n
+for i in range(0,m):
+  for j in range(0,n):
+    a[i][j]=input()
+    
+print(a)
