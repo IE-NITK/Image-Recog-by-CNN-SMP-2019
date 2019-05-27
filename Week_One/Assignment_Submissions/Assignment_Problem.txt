@@ -1,1 +1,48 @@
-Will be put up shortly
+Assignment I
+
+1. Write a program that allows the user to play Tic-Tac-Toe against the computer. You
+program must draw the board after every move played. Use random to generate the
+computer’s move. The program must declare the winner and terminate when the game is
+won.
+
+Bonus: Store the game and/or results in a .txt document using File Handling in Python.
+
+2. Shape and Reshape
+You are given a space separated list of nine integers. Your task is to convert this list into
+a mxn array.
+Input: m, n, the mxn integers
+Output: the numpy array
+Example:
+Input: 3 3 1 2 3 4 5 6 7 8 9
+Output: ​ [[1 2 3]
+[4 5 6]
+[7 8 9]]
+
+References
+1) The Python notebook in our GitHub repo
+https://github.com/IE-NITK/Image-Recog-by-CNN-SMP-2019
+2) Basic input/output:
+https://www.hackerearth.com/practice/python/getting-started/input-and-output/tutorial/
+3) Functions in Python
+https://www.tutorialspoint.com/python3/python_functions.htm
+4) Docs for numpy.reshape
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.reshape.html
+
+How to submit?
+
+As a PR to our repo.
+Reference:​ https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribut
+ion-5302260a2940
+Follow through till step 6.
+Ignore step 4 and do this instead:
+Open Week_One/Assignment_Submissions
+Create a folder under your name.
+Paste your Python notebooks/files there.
+Add those changes to the branch you just created using the git add command:
+git add .
+Now commit those changes using the git commit command:
+git commit -m "Assignment Submission"
+
+
+Deadline
+May 9th, 11:59 p.m.
